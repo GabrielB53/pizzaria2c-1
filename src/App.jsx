@@ -1,6 +1,7 @@
 import React, {useState} from 'react'
 import {Routes, Route} from 'react-router-dom'
 import Home from './pages/Home'
+import Inicio from './pages/Inicio'
 
 const App = () => {
   const [color] = useState("#a54fcc")
@@ -9,6 +10,7 @@ const App = () => {
   return (
     <Routes>
       <Route path="/" element={<Home />} />
+      <Route path="/Inicio" element={<Inicio/>} />
     </Routes>
   )
 }
